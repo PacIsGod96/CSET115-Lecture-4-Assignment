@@ -26,3 +26,18 @@ function checkForNumber(numCheckOne, numCheckTwo){
 console.log(checkForNumber(numCheckOne))
 console.log(checkForNumber(numCheckTwo))
 
+let numArr = [1,2,3,4,5]
+function objects(numArr){
+    let result = []
+    for(let x = 0; x < numArr.length; x++){
+        let indvNum = numArr[x]
+        let key = String(indvNum)
+        let charCode = key.charCodeAt(0)
+        let value = String(charCode)
+        let object = {}
+        object[key] = value
+        result.push(object)
+    }
+    return result
+}
+console.log(objects(numArr))
